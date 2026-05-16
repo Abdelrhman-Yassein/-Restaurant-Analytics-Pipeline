@@ -1,0 +1,80 @@
+[0m18:02:03.452989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D2A59040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D04FEF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D08D39E0>]}
+
+
+============================== 18:02:03.452989 | e2071ddc-528e-4f95-9a2e-0d0fd9c210e8 ==============================
+[0m18:02:03.452989 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m18:02:03.452989 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\NEXT STORE\\.dbt', 'invocation_command': 'dbt init restaurant_dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:02:03.479004 [debug] [MainThread]: Starter project path: D:\2 - Courses\projects\restaurant_pipeline\resenv\Lib\site-packages\dbt\include\starter_project
+[0m18:02:03.508630 [info ] [MainThread]: Setting up your profile.
+[0m18:02:45.906401 [info ] [MainThread]: Profile restaurant_dbt written to C:\Users\NEXT STORE\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:02:45.918753 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:02:45.919708 [info ] [MainThread]: dbt version: 1.12.0-b1
+[0m18:02:45.920739 [info ] [MainThread]: python version: 3.12.3
+[0m18:02:45.921506 [info ] [MainThread]: python path: D:\2 - Courses\projects\restaurant_pipeline\resenv\Scripts\python.exe
+[0m18:02:45.922299 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m18:02:45.967944 [info ] [MainThread]: Using profiles dir at C:\Users\NEXT STORE\.dbt
+[0m18:02:45.968906 [info ] [MainThread]: Using profiles.yml file at C:\Users\NEXT STORE\.dbt\profiles.yml
+[0m18:02:45.968906 [info ] [MainThread]: Using dbt_project.yml file at D:\2 - Courses\projects\restaurant_pipeline\restaurant_dbt\dbt_project.yml
+[0m18:02:45.971106 [info ] [MainThread]: adapter type: postgres
+[0m18:02:45.971106 [info ] [MainThread]: adapter version: 1.10.0
+[0m18:02:46.061296 [info ] [MainThread]: Configuration:
+[0m18:02:46.063502 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:02:46.063502 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:02:46.064505 [info ] [MainThread]: Required dependencies:
+[0m18:02:46.065507 [debug] [MainThread]: Executing "git --help"
+[0m18:02:46.147662 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:02:46.147662 [debug] [MainThread]: STDERR: "b''"
+[0m18:02:46.147662 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:02:46.147662 [info ] [MainThread]: Connection:
+[0m18:02:46.147662 [info ] [MainThread]:   host: localhost
+[0m18:02:46.147662 [info ] [MainThread]:   port: 5432
+[0m18:02:46.147662 [info ] [MainThread]:   user: postgres
+[0m18:02:46.147662 [info ] [MainThread]:   database: restaurant_dw
+[0m18:02:46.147662 [info ] [MainThread]:   schema: public
+[0m18:02:46.147662 [info ] [MainThread]:   connect_timeout: 10
+[0m18:02:46.147662 [info ] [MainThread]:   role: None
+[0m18:02:46.147662 [info ] [MainThread]:   search_path: None
+[0m18:02:46.147662 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:02:46.147662 [info ] [MainThread]:   sslmode: None
+[0m18:02:46.158782 [info ] [MainThread]:   sslcert: None
+[0m18:02:46.158782 [info ] [MainThread]:   sslkey: None
+[0m18:02:46.159820 [info ] [MainThread]:   sslrootcert: None
+[0m18:02:46.159820 [info ] [MainThread]:   application_name: dbt
+[0m18:02:46.160790 [info ] [MainThread]:   retries: 1
+[0m18:02:46.161793 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m18:02:46.327122 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:02:49.970073 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:02:49.970073 [debug] [MainThread]: On debug: select 1 as id
+[0m18:02:49.971170 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:02:50.027918 [debug] [MainThread]: SQL status: SELECT 1 in 0.057 seconds
+[0m18:02:50.028919 [debug] [MainThread]: On debug: Close
+[0m18:02:50.029919 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:02:50.029919 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:02:50.029919 [info ] [MainThread]: Your new dbt project "restaurant_dbt" was created!
+Initialized new project in D:\2 - Courses\projects\restaurant_pipeline\restaurant_dbt\restaurant_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:02:50.031159 [debug] [MainThread]: Command `dbt init` succeeded at 18:02:50.031159 after 46.74 seconds
+[0m18:02:50.032633 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:02:50.032633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D37E2F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D0F60830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D2628980>]}
+[0m18:02:50.033778 [debug] [MainThread]: Flushing usage events
+[0m18:02:50.897381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.175"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019e2bb3-4ea4-7622-9ed8-c4176bf7f7e3","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.175","name":"MainReportVersion","pid":36140,"thread":"tokio-rt-worker","ts":"2026-05-15T12:53:51.993325Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\NEXT STORE\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019e2bb3-4ea4-7622-9ed8-c4176bf7f7e3","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":36140,"thread":"tokio-rt-worker","ts":"2026-05-15T12:53:51.996223Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019e2bb3-4ea4-7622-9ed8-c4176bf7f7e3","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":36140,"thread":"tokio-rt-worker","ts":"2026-05-15T12:53:52.018527Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019e2bb3-4ea4-7622-9ed8-c4176bf7f7e3","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":36140,"thread":"tokio-rt-worker","ts":"2026-05-15T12:53:52.021348Z"}}
+{"data":{"completed_at":"2026-05-15T12:53:53.968051Z","elapsed":1.9836974143981934,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019e2bb3-4ea4-7622-9ed8-c4176bf7f7e3","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.0s]","name":"CommandCompleted","pid":36140,"thread":"tokio-rt-worker","ts":"2026-05-15T12:53:53.973560Z"}}
